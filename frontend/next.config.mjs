@@ -3,6 +3,11 @@ const nextConfig = {
   experimental: {
     serverComponentsHmrCache: false, // defaults to true
   },
+  logging: {
+    fetches: {
+      fullUrl: true,
+    },
+  },
   images: {
     remotePatterns: [
       {
