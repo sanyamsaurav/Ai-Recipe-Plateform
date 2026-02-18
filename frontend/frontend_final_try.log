@@ -1,0 +1,180 @@
+
+> frontend@0.1.0 dev
+> next dev
+
+⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of C:\Users\sanya\Downloads\ai-recipe-platform-master\package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * C:\Users\sanya\Downloads\ai-recipe-platform-master\ai-recipe-platform-master\frontend\package-lock.json
+
+▲ Next.js 16.1.1 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.1.42:3000
+- Environments: .env.local
+- Experiments (use with caution):
+  ⨯ serverComponentsHmrCache
+
+✓ Starting...
+⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+✓ Ready in 1112ms
+✦Aj WARN Arcjet will use 127.0.0.1 when missing public IP address in development mode
+Strapi error response: {"data":null,"error":{"status":401,"name":"UnauthorizedError","message":"Missing or invalid credentials","details":{}}}
+ GET / 200 in 12.4s (compile: 6.7s, proxy.ts: 3.1s, render: 2.5s)
+Strapi error response: {"data":null,"error":{"status":401,"name":"UnauthorizedError","message":"Missing or invalid credentials","details":{}}}
+ GET / 200 in 1715ms (compile: 25ms, proxy.ts: 441ms, render: 1249ms)
+ POST / 200 in 300ms (compile: 14ms, proxy.ts: 238ms, render: 48ms)
+ POST / 200 in 248ms (compile: 15ms, proxy.ts: 201ms, render: 32ms)
+Strapi error response: {"data":null,"error":{"status":401,"name":"UnauthorizedError","message":"Missing or invalid credentials","details":{}}}
+Strapi error response: {"data":null,"error":{"status":401,"name":"UnauthorizedError","message":"Missing or invalid credentials","details":{}}}
+ GET / 200 in 6.0s (compile: 17ms, proxy.ts: 468ms, render: 5.6s)
+ GET / 200 in 4.0s (compile: 97ms, proxy.ts: 595ms, render: 3.3s)
+ POST / 200 in 316ms (compile: 16ms, proxy.ts: 259ms, render: 41ms)
+ POST / 200 in 241ms (compile: 32ms, proxy.ts: 180ms, render: 30ms)
+○ Compiling /pantry ...
+ GET /pantry 200 in 10.1s (compile: 9.0s, proxy.ts: 416ms, render: 656ms)
+ GET /pantry 200 in 500ms (compile: 15ms, proxy.ts: 436ms, render: 49ms)
+✦Aj WARN Arcjet will use 127.0.0.1 when missing public IP address in development mode
+Strapi error response: {"data":null,"error":{"status":401,"name":"UnauthorizedError","message":"Missing or invalid credentials","details":{}}}
+Error fetching pantry: Error: User not authenticated
+    at getPantryItems (actions\pantry.actions.js:234:13)
+  232 |     const user = await checkUser();
+  233 |     if (!user) {
+> 234 |       throw new Error("User not authenticated");
+      |             ^
+  235 |     }
+  236 |
+  237 |     const response = await fetch(
+⨯ Error: User not authenticated
+    at getPantryItems (actions\pantry.actions.js:262:11)
+  260 |   } catch (error) {
+  261 |     console.error("Error fetching pantry:", error);
+> 262 |     throw new Error(error.message || "Failed to load pantry");
+      |           ^
+  263 |   }
+  264 | }
+  265 | {
+  digest: '3805643243'
+}
+ POST /pantry 500 in 3.6s (compile: 46ms, proxy.ts: 187ms, render: 3.4s)
+Strapi error response: {"data":null,"error":{"status":401,"name":"UnauthorizedError","message":"Missing or invalid credentials","details":{}}}
+Error fetching pantry: Error: User not authenticated
+    at getPantryItems (actions\pantry.actions.js:234:13)
+  232 |     const user = await checkUser();
+  233 |     if (!user) {
+> 234 |       throw new Error("User not authenticated");
+      |             ^
+  235 |     }
+  236 |
+  237 |     const response = await fetch(
+⨯ Error: User not authenticated
+    at getPantryItems (actions\pantry.actions.js:262:11)
+  260 |   } catch (error) {
+  261 |     console.error("Error fetching pantry:", error);
+> 262 |     throw new Error(error.message || "Failed to load pantry");
+      |           ^
+  263 |   }
+  264 | }
+  265 | {
+  digest: '3805643243'
+}
+ POST /pantry 500 in 3.0s (compile: 21ms, proxy.ts: 274ms, render: 2.7s)
+ GET /pantry 200 in 600ms (compile: 9ms, proxy.ts: 377ms, render: 214ms)
+Strapi error response: {"data":null,"error":{"status":401,"name":"UnauthorizedError","message":"Missing or invalid credentials","details":{}}}
+Error fetching pantry: Error: User not authenticated
+    at getPantryItems (actions\pantry.actions.js:234:13)
+  232 |     const user = await checkUser();
+  233 |     if (!user) {
+> 234 |       throw new Error("User not authenticated");
+      |             ^
+  235 |     }
+  236 |
+  237 |     const response = await fetch(
+⨯ Error: User not authenticated
+    at getPantryItems (actions\pantry.actions.js:262:11)
+  260 |   } catch (error) {
+  261 |     console.error("Error fetching pantry:", error);
+> 262 |     throw new Error(error.message || "Failed to load pantry");
+      |           ^
+  263 |   }
+  264 | }
+  265 | {
+  digest: '3805643243'
+}
+ POST /pantry 500 in 3.7s (compile: 18ms, proxy.ts: 251ms, render: 3.4s)
+Strapi error response: {"data":null,"error":{"status":401,"name":"UnauthorizedError","message":"Missing or invalid credentials","details":{}}}
+Error fetching pantry: Error: User not authenticated
+    at getPantryItems (actions\pantry.actions.js:234:13)
+  232 |     const user = await checkUser();
+  233 |     if (!user) {
+> 234 |       throw new Error("User not authenticated");
+      |             ^
+  235 |     }
+  236 |
+  237 |     const response = await fetch(
+⨯ Error: User not authenticated
+    at getPantryItems (actions\pantry.actions.js:262:11)
+  260 |   } catch (error) {
+  261 |     console.error("Error fetching pantry:", error);
+> 262 |     throw new Error(error.message || "Failed to load pantry");
+      |           ^
+  263 |   }
+  264 | }
+  265 | {
+  digest: '3805643243'
+}
+ POST /pantry 500 in 2.5s (compile: 33ms, proxy.ts: 320ms, render: 2.1s)
+ GET /recipes 200 in 3.6s (compile: 2.8s, proxy.ts: 444ms, render: 342ms)
+ GET /recipes 200 in 389ms (compile: 10ms, proxy.ts: 246ms, render: 133ms)
+Strapi error response: {"data":null,"error":{"status":401,"name":"UnauthorizedError","message":"Missing or invalid credentials","details":{}}}
+Error fetching saved recipes: Error: User not authenticated
+    at getSavedRecipes (actions\recipe.actions.js:601:13)
+  599 |     const user = await checkUser();
+  600 |     if (!user) {
+> 601 |       throw new Error("User not authenticated");
+      |             ^
+  602 |     }
+  603 |
+  604 |     // Fetch saved recipes with populated recipe data
+⨯ Error: User not authenticated
+    at getSavedRecipes (actions\recipe.actions.js:633:11)
+  631 |   } catch (error) {
+  632 |     console.error("Error fetching saved recipes:", error);
+> 633 |     throw new Error(error.message || "Failed to load saved recipes");
+      |           ^
+  634 |   }
+  635 | }
+  636 | {
+  digest: '192279287'
+}
+ POST /recipes 500 in 3.0s (compile: 19ms, proxy.ts: 491ms, render: 2.5s)
+ GET /recipes 200 in 574ms (compile: 154ms, proxy.ts: 292ms, render: 129ms)
+Strapi error response: {"data":null,"error":{"status":401,"name":"UnauthorizedError","message":"Missing or invalid credentials","details":{}}}
+Error fetching saved recipes: Error: User not authenticated
+    at getSavedRecipes (actions\recipe.actions.js:601:13)
+  599 |     const user = await checkUser();
+  600 |     if (!user) {
+> 601 |       throw new Error("User not authenticated");
+      |             ^
+  602 |     }
+  603 |
+  604 |     // Fetch saved recipes with populated recipe data
+⨯ Error: User not authenticated
+    at getSavedRecipes (actions\recipe.actions.js:633:11)
+  631 |   } catch (error) {
+  632 |     console.error("Error fetching saved recipes:", error);
+> 633 |     throw new Error(error.message || "Failed to load saved recipes");
+      |           ^
+  634 |   }
+  635 | }
+  636 | {
+  digest: '192279287'
+}
+ POST /recipes 500 in 2.7s (compile: 242ms, proxy.ts: 285ms, render: 2.2s)
+Strapi error response: {"data":null,"error":{"status":401,"name":"UnauthorizedError","message":"Missing or invalid credentials","details":{}}}
+Strapi error response: {"data":null,"error":{"status":401,"name":"UnauthorizedError","message":"Missing or invalid credentials","details":{}}}
+ GET / 200 in 8.0s (compile: 15ms, proxy.ts: 1903ms, render: 6.1s)
+ GET / 200 in 4.3s (compile: 115ms, proxy.ts: 384ms, render: 3.8s)
+ POST / 200 in 406ms (compile: 15ms, proxy.ts: 369ms, render: 22ms)
+ POST / 200 in 381ms (compile: 7ms, proxy.ts: 366ms, render: 8ms)

@@ -1,0 +1,177 @@
+
+> frontend@0.1.0 dev
+> next dev
+
+⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of C:\Users\sanya\Downloads\ai-recipe-platform-master\package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * C:\Users\sanya\Downloads\ai-recipe-platform-master\ai-recipe-platform-master\frontend\package-lock.json
+
+▲ Next.js 16.1.1 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.1.42:3000
+- Environments: .env.local
+- Experiments (use with caution):
+  ⨯ serverComponentsHmrCache
+
+✓ Starting...
+⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+✓ Ready in 1491ms
+✦Aj WARN Arcjet will use 127.0.0.1 when missing public IP address in development mode
+Strapi error response: {"data":null,"error":{"status":401,"name":"UnauthorizedError","message":"Missing or invalid credentials","details":{}}}
+ GET / 200 in 16.7s (compile: 4.3s, proxy.ts: 4.7s, render: 7.7s)
+Strapi error response: {"data":null,"error":{"status":401,"name":"UnauthorizedError","message":"Missing or invalid credentials","details":{}}}
+ GET / 200 in 1792ms (compile: 11ms, proxy.ts: 889ms, render: 891ms)
+ POST / 200 in 620ms (compile: 25ms, proxy.ts: 533ms, render: 62ms)
+ GET /dashboard 200 in 5.4s (compile: 233ms, proxy.ts: 265ms, render: 4.9s)
+ GET /dashboard 200 in 4.3s (compile: 446ms, proxy.ts: 534ms, render: 3.4s)
+ GET /dashboard 200 in 2.1s (compile: 27ms, proxy.ts: 607ms, render: 1500ms)
+ GET /dashboard 200 in 1065ms (compile: 152ms, proxy.ts: 329ms, render: 584ms)
+○ Compiling /recipe ...
+ POST / 200 in 610ms (compile: 70ms, proxy.ts: 469ms, render: 71ms)
+ GET /dashboard 200 in 1743ms (compile: 51ms, proxy.ts: 746ms, render: 945ms)
+ GET /recipe?cook=Brie+wrapped+in+prosciutto+%26+brioche 200 in 14.3s (compile: 13.7s, proxy.ts: 314ms, render: 301ms)
+ GET /recipe?cook=Brie+wrapped+in+prosciutto+%26+brioche 200 in 386ms (compile: 14ms, proxy.ts: 206ms, render: 165ms)
+ GET /recipe?cook=Brie+wrapped+in+prosciutto+%26+brioche 200 in 559ms (compile: 17ms, proxy.ts: 344ms, render: 198ms)
+✦Aj WARN Arcjet will use 127.0.0.1 when missing public IP address in development mode
+Strapi error response: {"data":null,"error":{"status":401,"name":"UnauthorizedError","message":"Missing or invalid credentials","details":{}}}
+❌ Error in getOrGenerateRecipe: Error: User not authenticated
+    at getOrGenerateRecipe (actions\recipe.actions.js:71:13)
+  69 |     const user = await checkUser();
+  70 |     if (!user) {
+> 71 |       throw new Error("User not authenticated");
+     |             ^
+  72 |     }
+  73 |
+  74 |     const recipeName = formData.get("recipeName");
+⨯ Error: User not authenticated
+    at getOrGenerateRecipe (actions\recipe.actions.js:336:11)
+  334 |   } catch (error) {
+  335 |     console.error("❌ Error in getOrGenerateRecipe:", error);
+> 336 |     throw new Error(error.message || "Failed to load recipe");
+      |           ^
+  337 |   }
+  338 | }
+  339 | {
+  digest: '1776653566'
+}
+ POST /recipe?cook=Brie%20wrapped%20in%20prosciutto%20%26%20brioche 500 in 6.7s (compile: 31ms, proxy.ts: 454ms, render: 6.2s)
+Strapi error response: {"data":null,"error":{"status":401,"name":"UnauthorizedError","message":"Missing or invalid credentials","details":{}}}
+❌ Error in getOrGenerateRecipe: Error: User not authenticated
+    at getOrGenerateRecipe (actions\recipe.actions.js:71:13)
+  69 |     const user = await checkUser();
+  70 |     if (!user) {
+> 71 |       throw new Error("User not authenticated");
+     |             ^
+  72 |     }
+  73 |
+  74 |     const recipeName = formData.get("recipeName");
+⨯ Error: User not authenticated
+    at getOrGenerateRecipe (actions\recipe.actions.js:336:11)
+  334 |   } catch (error) {
+  335 |     console.error("❌ Error in getOrGenerateRecipe:", error);
+> 336 |     throw new Error(error.message || "Failed to load recipe");
+      |           ^
+  337 |   }
+  338 | }
+  339 | {
+  digest: '1776653566'
+}
+ POST /recipe?cook=Brie%20wrapped%20in%20prosciutto%20%26%20brioche 500 in 8.5s (compile: 161ms, proxy.ts: 1508ms, render: 6.9s)
+Strapi error response: {"data":null,"error":{"status":401,"name":"UnauthorizedError","message":"Missing or invalid credentials","details":{}}}
+❌ Error in getOrGenerateRecipe: Error: User not authenticated
+    at getOrGenerateRecipe (actions\recipe.actions.js:71:13)
+  69 |     const user = await checkUser();
+  70 |     if (!user) {
+> 71 |       throw new Error("User not authenticated");
+     |             ^
+  72 |     }
+  73 |
+  74 |     const recipeName = formData.get("recipeName");
+⨯ Error: User not authenticated
+    at getOrGenerateRecipe (actions\recipe.actions.js:336:11)
+  334 |   } catch (error) {
+  335 |     console.error("❌ Error in getOrGenerateRecipe:", error);
+> 336 |     throw new Error(error.message || "Failed to load recipe");
+      |           ^
+  337 |   }
+  338 | }
+  339 | {
+  digest: '1776653566'
+}
+ POST /recipe?cook=Brie%20wrapped%20in%20prosciutto%20%26%20brioche 500 in 13.6s (compile: 21ms, proxy.ts: 685ms, render: 12.9s)
+Strapi error response: {"data":null,"error":{"status":401,"name":"UnauthorizedError","message":"Missing or invalid credentials","details":{}}}
+❌ Error in getOrGenerateRecipe: Error: User not authenticated
+    at getOrGenerateRecipe (actions\recipe.actions.js:71:13)
+  69 |     const user = await checkUser();
+  70 |     if (!user) {
+> 71 |       throw new Error("User not authenticated");
+     |             ^
+  72 |     }
+  73 |
+  74 |     const recipeName = formData.get("recipeName");
+⨯ Error: User not authenticated
+    at getOrGenerateRecipe (actions\recipe.actions.js:336:11)
+  334 |   } catch (error) {
+  335 |     console.error("❌ Error in getOrGenerateRecipe:", error);
+> 336 |     throw new Error(error.message || "Failed to load recipe");
+      |           ^
+  337 |   }
+  338 | }
+  339 | {
+  digest: '1776653566'
+}
+ POST /recipe?cook=Brie%20wrapped%20in%20prosciutto%20%26%20brioche 500 in 10.6s (compile: 43ms, proxy.ts: 6.8s, render: 3.7s)
+ GET /recipe?cook=Brie%20wrapped%20in%20prosciutto%20%26%20brioche 200 in 2.9s (compile: 22ms, proxy.ts: 1051ms, render: 1858ms)
+Strapi error response: {"data":null,"error":{"status":401,"name":"UnauthorizedError","message":"Missing or invalid credentials","details":{}}}
+Strapi error response: {"data":null,"error":{"status":401,"name":"UnauthorizedError","message":"Missing or invalid credentials","details":{}}}
+ GET /recipe?cook=Brie%20wrapped%20in%20prosciutto%20%26%20brioche 200 in 4.9s (compile: 227ms, proxy.ts: 1404ms, render: 3.3s)
+ POST /recipe?cook=Brie%20wrapped%20in%20prosciutto%20%26%20brioche 200 in 785ms (compile: 64ms, proxy.ts: 628ms, render: 93ms)
+Strapi error response: {"data":null,"error":{"status":401,"name":"UnauthorizedError","message":"Missing or invalid credentials","details":{}}}
+❌ Error in getOrGenerateRecipe: Error: User not authenticated
+    at getOrGenerateRecipe (actions\recipe.actions.js:71:13)
+  69 |     const user = await checkUser();
+  70 |     if (!user) {
+> 71 |       throw new Error("User not authenticated");
+     |             ^
+  72 |     }
+  73 |
+  74 |     const recipeName = formData.get("recipeName");
+⨯ Error: User not authenticated
+    at getOrGenerateRecipe (actions\recipe.actions.js:336:11)
+  334 |   } catch (error) {
+  335 |     console.error("❌ Error in getOrGenerateRecipe:", error);
+> 336 |     throw new Error(error.message || "Failed to load recipe");
+      |           ^
+  337 |   }
+  338 | }
+  339 | {
+  digest: '1776653566'
+}
+ POST /recipe?cook=Brie%20wrapped%20in%20prosciutto%20%26%20brioche 500 in 6.3s (compile: 44ms, proxy.ts: 430ms, render: 5.8s)
+ POST /recipe?cook=Brie%20wrapped%20in%20prosciutto%20%26%20brioche 200 in 586ms (compile: 83ms, proxy.ts: 452ms, render: 51ms)
+Strapi error response: {"data":null,"error":{"status":401,"name":"UnauthorizedError","message":"Missing or invalid credentials","details":{}}}
+❌ Error in getOrGenerateRecipe: Error: User not authenticated
+    at getOrGenerateRecipe (actions\recipe.actions.js:71:13)
+  69 |     const user = await checkUser();
+  70 |     if (!user) {
+> 71 |       throw new Error("User not authenticated");
+     |             ^
+  72 |     }
+  73 |
+  74 |     const recipeName = formData.get("recipeName");
+⨯ Error: User not authenticated
+    at getOrGenerateRecipe (actions\recipe.actions.js:336:11)
+  334 |   } catch (error) {
+  335 |     console.error("❌ Error in getOrGenerateRecipe:", error);
+> 336 |     throw new Error(error.message || "Failed to load recipe");
+      |           ^
+  337 |   }
+  338 | }
+  339 | {
+  digest: '1776653566'
+}
+ POST /recipe?cook=Brie%20wrapped%20in%20prosciutto%20%26%20brioche 500 in 2.4s (compile: 36ms, proxy.ts: 196ms, render: 2.1s)
+^C^C
